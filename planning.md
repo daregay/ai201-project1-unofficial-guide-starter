@@ -9,8 +9,8 @@
 
 ## Domain
 
-<!-- My project is an Unofficial Guide to Surviving CU Boulder. It covers the practical stuff that actually matters to students — orientation tips, study spaces, dining, getting around, campus resources, and things people wish someone had told them before they showed up.
-The reason this is worth building is that the official CU Boulder website tells you what services exist, but it doesn't really tell you how to use them or what's actually worth your time. Reddit has that kind of honest advice, but it's all over the place and hard to search. This project pulls it together into something more useful. -->
+My project is an Unofficial Guide to Surviving CU Boulder. It covers the practical stuff that actually matters to students — orientation tips, study spaces, dining, getting around, campus resources, and things people wish someone had told them before they showed up.
+The reason this is worth building is that the official CU Boulder website tells you what services exist, but it doesn't really tell you how to use them or what's actually worth your time. Reddit has that kind of honest advice, but it's all over the place and hard to search. This project pulls it together into something more useful.
 
 ---
 
@@ -31,6 +31,7 @@ The reason this is worth building is that the official CU Boulder website tells 
 | 8 | Reddit Before Enrolling Thread | Students share what they wish they knew before enrolling | https://www.reddit.com/r/cuboulder/comments/1bcof00/what_do_you_wish_you_knew_before_enrolling_at/ |
 | 9 | Reddit Honest Opinions Thread | Current students and alumni share honest opinions about CU Boulder | https://www.reddit.com/r/cuboulder/comments/18iifhv/current_students_and_alumni_what_are_your_honest/ |
 | 10 | Reddit Dining Thread | Students discuss C4C eating and dining recommendations | | 10 | Reddit Study Spaces Thread | Students discuss quiet and useful places to study on campus | https://www.reddit.com/r/cuboulder/comments/1bbs71n/study_spaces_that_are_actually_silent/ |
+| 11 | Reddit Study Spaces Thread | Students discuss quiet and useful places to study on campus | https://www.reddit.com/r/cuboulder/comments/1bbs71n/study_spaces_that_are_actually_silent/ |
 
 ---
 
@@ -46,7 +47,8 @@ The reason this is worth building is that the official CU Boulder website tells 
 **Overlap: 120 characters**
 
 **Reasoning: **
-My sources are a mix of official pages and Reddit threads, so the writing style varies a lot. Official pages tend to have longer, more structured paragraphs, while Reddit comments are short and scattered. A 700-character chunk is big enough to keep one complete idea together — like a single tip about transportation or a dining recommendation — without accidentally grouping unrelated things. The 120-character overlap is there so useful advice doesn't get cut in half at a chunk boundary. If a tip starts near the end of one chunk and keeps going into the next, the overlap gives the retriever a better shot at catching the whole thing.
+My sources are a mix of official pages and Reddit threads, so the writing style varies a lot. Official pages tend to have longer, more structured paragraphs, while Reddit comments are short and scattered. A 700-character chunk is big enough to keep one complete idea together — like a single tip about transportation or a dining recommendation — without accidentally grouping unrelated things. The 120-character overlap is there so useful advice doesn't get cut in half at a chunk boundary. If a tip starts near the end of one chunk and keeps going into the next, the overlap gives the retriever a better shot at catching the whole thing. I will also filter out empty chunks and chunks shorter than 100 characters to reduce noise and avoid embedding fragments that do not contain enough meaningful information.
+
 
 ## Retrieval Approach
 
